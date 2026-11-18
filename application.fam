@@ -1,0 +1,17 @@
+App(
+    appid="ac2101_curtain_remote",
+    name="AC2101 Curtain",
+    apptype=FlipperAppType.EXTERNAL,
+    targets=["f7"],
+    entry_point="ac2101_curtain_remote_app",
+    requires=[
+        "gui",
+        "storage",
+    ],
+    stack_size=4 * 1024,
+    order=14,
+    fap_category="Sub-GHz",
+    fap_version=(1, 0),
+    fap_description="40 kBaud 2-FSK capture & remote for AC2101-01A / Allesin motorized blinds",
+    fap_icon="ac2101_curtain_remote.png",
+)
